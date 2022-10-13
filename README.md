@@ -1,5 +1,16 @@
-# SLackathon-Payment-Fraud-Detection-cygnus01
+# SLackathon-Payment-Fraud-Detection-Cygnus01
 #### By K.Poornima
+
+## Contents
+
+- 1.0 Introduction
+- 2.0 What is the exact problem? 
+  - 2.1 Why is it happening?
+  - 2.2 Why current approaches in handling frauds are not efficient? 
+  - 2.3 What we can do differently and why data analytics/machine learning?
+- 3.0 The approach
+- 4.0 General overview on data preprocessing and model building
+  - 4.1 The probable challenges in developing the ML Model
   
 
 ### 1.0 Introduction
