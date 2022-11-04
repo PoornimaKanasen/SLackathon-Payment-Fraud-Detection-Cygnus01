@@ -11,6 +11,10 @@
 - 3.0 The approach
 - 4.0 General overview on data preprocessing and model building
   - 4.1 The probable challenges in developing the ML Model
+- 5.0 Solution design presentation
+- 6.0 Anomaly detection and Classification Algorithms
+- 7.0 Project Roadmap
+- 8.0 Future Scope of Work
   
 
 ### 1.0 Introduction
@@ -108,6 +112,55 @@ Accuracy = (TP+FP)/(TP+FP+FN+TN) where
 The metric selected for imbalance target class dataset should be a combination of Recall and Precision, like F1-Score.
 
 Feature elimination/masking either by regularization or dimensionality reduction. We can even venture into IBM Privacy toolkit in order to build a less complex model while removing redundant features which will not be useful in building our model.
+
+
+### 5.0 Solution design presentation
+
+https://user-images.githubusercontent.com/107114510/200026741-fc92d3d7-6e9e-4ddf-b210-2f5d723fd502.mp4
+
+
+### 6.0 The architectural diagram
+
+
+![architecture-1i](https://user-images.githubusercontent.com/107114510/200019585-249d92e5-d298-4417-9ecf-d082b8b4760f.png)
+<p align="center">Image 6.0 – The architectural diagram</p>
+
+
+### 7.0 Anomaly detection and Classification Algorithms
+
+**Anomaly detection algo**
+Anomalies are data points which are out of norm compared to other points. These points show change of course or deviation from the dataset. Deviations as such can be detected through anomaly detection techniques which fall into the unsupervised learning. 
+
+![types of anomalies](https://user-images.githubusercontent.com/107114510/200023474-6765f6b4-ca2a-48b7-836d-21cafb3d0d5f.png)
+<p align="center">Image 7.0 – Types of anomalies</p>
+
+Some of the anomaly detection algorithms are : Isolation forest, Local outlier factor, One class SVM and many others.We have used Isolation forest algorithm to detect anomalies in our dataset
+
+![isofor](https://user-images.githubusercontent.com/107114510/200023494-36b2e2c7-afcd-476e-b2a6-65b706050e5b.png)
+<p align="center">Image 7.1 – Isolation Forest Algo</p>
+
+**Classification algo - AUTOML (TPOT)**
+
+TPOT is a Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programming.
+
+![tpot-new](https://user-images.githubusercontent.com/107114510/200024313-4de3c703-1a13-4663-ab1d-2dd62f5b8683.png)
+<p align="center">Image 7.1 – Screenshot of TPOT execution</p>
+
+### 8.0 Project Roadmap
+
+
+![roadmap-1](https://user-images.githubusercontent.com/107114510/200019497-ef334bc2-0dff-4cc6-a420-64707a41f389.png)
+<p align="center">Image 8.0 – Project Roadmap</p>
+
+
+### 9.0 Future Scope of Work
+
+
+1. More algorithms should be explored and responding time window should be minimized. detection in real-time is the key to find a proper solution. 
+2. Improve IT infrastructure in order to support data analytics and machine learning as the current system does not cater to big data technology. It is the primary reason why analytics are not done on the entire historical data and only on a portion of sample data. This could maybe hinder our algorithms in learning more patterns.
+3. New techniques should be investigated to rectify data imbalance. This will hamper the performance of our algorithms and give way to unidentified fraud cases.
+
+
 
 **References**
 
