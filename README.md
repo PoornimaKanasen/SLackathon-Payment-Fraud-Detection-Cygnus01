@@ -72,20 +72,20 @@ A lot of insights can be drawn based on historical data which might consists typ
 ### 3.0 The approach
 
 
-Our challenge is to detect and prevent the fraud by analyzing individual customer’s behavior and the overall context in where and how each transaction takes place is then compared with the customer’s established behavioral profile to detect any anomaly. We need a multi-agent system and therefore we will employ a mixed model with the combination of both supervised learning (the model will train based on features and target output to detect/predict future frauds) and unsupervised learning (the model will detect anomalies through clustering). Image 3.1 shows the first phase of fraud detection system and image 3.2 shows the second phase flow diagram where the payment is sanctioned.
+Our challenge is to detect and prevent the fraud by analyzing individual customer’s behavior and the overall context in where and how each transaction takes place is then compared with the customer’s established behavioral profile to detect any anomaly. We need a multi-agent system and therefore we will employ a mixed model with the combination of both supervised learning (the model will train based on features and target output to detect/predict future frauds) and unsupervised learning (the model will detect anomalies through clustering). Image 3.0 shows the first phase of fraud detection system and image 3.1 shows the second phase flow diagram where the payment is sanctioned.
 
 ![image 3 1](https://user-images.githubusercontent.com/107114510/195569599-cb901624-8ee5-49ca-bc56-91b7edf09d4a.png)
-<p align="center">Image 3.1 – First phase of fraud detection system - Monitor transaction and behavioral analysis</p>
+<p align="center">Image 3.0 – First phase of fraud detection system - Monitor transaction and behavioral analysis</p>
 
 
 ![image 3 2](https://user-images.githubusercontent.com/107114510/195569610-1358b46a-6012-4d67-bab3-bf5fc76eed6c.png)
-<p align="center">Image 3.2 – Second phase of fraud detection system – Payment Sanctioning</p>
+<p align="center">Image 3.1 – Second phase of fraud detection system – Payment Sanctioning</p>
 
 A scoring method will be enabled in our model and each transaction will be scored against it. The model will include all the available data collected (type, size and location of transaction, was it a first time recipient from a customer’s account, time, day and month, the customer’s device upon which the transaction was triggered, which web browser and so on) and use these to score the transaction. If the transaction is suspected to be an anomaly, it will be flagged.
-Detection in real-time is the key to find a proper solution. Figure 3.0 [^5] shows the reaction time in establishing a fraud. There is a latency or time lag between the point which fraud happened and fraud detected. By the time the model realizes a fraud, it is usually too late. More advanced algorithms (for future studies) must be used in order to catch the fraud earlier. Of course, besides the algorithms, the IT infrastructure should be diligent enough to handle incoming threats.
+Detection in real-time is the key to find a proper solution. Figure 3.2 [^5] shows the reaction time in establishing a fraud. There is a latency or time lag between the point which fraud happened and fraud detected. By the time the model realizes a fraud, it is usually too late. More advanced algorithms (for future studies) must be used in order to catch the fraud earlier. Of course, besides the algorithms, the IT infrastructure should be diligent enough to handle incoming threats.
 
 ![image 3 3](https://user-images.githubusercontent.com/107114510/195569994-351413fc-a839-48b7-b42d-5e16ec704dbc.png)
-<p align="center">Image 3.3 - Key Issue: Reaction Time</p>
+<p align="center">Image 3.2 - Key Issue: Reaction Time</p>
 
 In short, we need to develop an anti-fraud system incorporating multiple agents (2 or more) which can effectively detect anomalies and prevent fraudulent activities as early as possible by not compromising customer’s confidential information. Our aim includes reducing false positives as to not cause inconvenience to the customers as well and operational losses. 
 
@@ -146,7 +146,7 @@ Some of the anomaly detection algorithms are : Isolation forest, Local outlier f
 TPOT is a Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programming.
 
 ![tpot-new](https://user-images.githubusercontent.com/107114510/200024313-4de3c703-1a13-4663-ab1d-2dd62f5b8683.png)
-<p align="center">Image 7.1 – Screenshot of TPOT execution</p>
+<p align="center">Image 7.2 – Screenshot of TPOT execution</p>
 
 ### 8.0 Project Roadmap
 
@@ -165,7 +165,7 @@ TPOT is a Python Automated Machine Learning tool that optimizes machine learning
 
 ### 9.1 Conclusion
 
-We have applied both supervised and unsupervised algorithms. Our unsupervised model will be forming the first layer of fraud detection mechanism where the behaviour or norms of each client can be identified beforehand (input features can be varied to attain better result). In case if the transaction is suspicious, our supervised model which will be the next level of fraud detection phase will be triggered to further conclude if the transaction made is fraud or non-fraud. The unsupervised model will need to have provision to continously update new behaviour of client transactions. The updates will increase the efficiency of our mixed model fraud detection by identifying new types of fraud as well as preventing them before occuring. Further research is needed to complete our model.
+We have applied both supervised and unsupervised algorithms in our case study. Our unsupervised model will be forming the first layer of fraud detection mechanism where the behaviour or norms of each client can be identified beforehand (input features can be varied to attain better result). In case if the transaction is suspicious, our supervised model which will be the next level of fraud detection phase will be triggered to further conclude if the transaction made is fraud or non-fraud. The unsupervised model will need to have provision to continously update new behaviour of client transactions. The updates will increase the efficiency of our mixed model fraud detection by identifying new types of fraud as well as preventing them before occuring. Further research is needed to complete our model.
 
 
 
