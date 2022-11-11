@@ -12,9 +12,11 @@
 - 4.0 General overview on data preprocessing and model building
   - 4.1 The probable challenges in developing the ML Model
 - 5.0 Solution design presentation
-- 6.0 Anomaly detection and Classification Algorithms
-- 7.0 Project Roadmap
-- 8.0 Future Scope of Work
+- 6.0 Architectural diagram
+- 7.0 Anomaly detection and Classification Algorithms
+- 8.0 Project roadmap
+- 9.0 Future scope of Work
+  - 9.1 Conclusion
   
 
 ### 1.0 Introduction
@@ -159,6 +161,11 @@ TPOT is a Python Automated Machine Learning tool that optimizes machine learning
 1. More algorithms should be explored and responding time window should be minimized. detection in real-time is the key to find a proper solution. 
 2. Improve IT infrastructure in order to support data analytics and machine learning as the current system does not cater to big data technology. It is the primary reason why analytics are not done on the entire historical data and only on a portion of sample data. This could maybe hinder our algorithms in learning more patterns.
 3. New techniques should be investigated to rectify data imbalance. This will hamper the performance of our algorithms and give way to unidentified fraud cases.
+4. We should aim to lower False Positive/Negative Rates.
+
+### 9.1 Conclusion
+
+We have applied both supervised and unsupervised algorithms. Our unsupervised model will be forming the first layer of fraud detection mechanism where the behaviour or norms of each client can be identified beforehand (input features can be varied to attain better result). In case if the transaction is suspicious, our supervised model which will be the next level of fraud detection phase will be triggered to further conclude if the transaction made is fraud or non-fraud. The unsupervised model will need to have provision to continously update new behaviour of client transactions. The updates will increase the efficiency of our mixed model fraud detection by identifying new types of fraud as well as preventing them before occuring. Further research is needed to complete our model.
 
 
 
